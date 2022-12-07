@@ -3,17 +3,20 @@
 
 
 Console.Clear();
-int [] arr = new int [8];
+int[] arr = FulfillArray(8);
+Console.WriteLine($"[{String.Join(",", arr)}]");
 
-void FulfillArray (int[] array)
+int[] FulfillArray (int size)
 {
-    int i = 1;
-    while (i<=array.Length)
+    int []array = new int [size];
+    int i = 0;
+    while (i<size)
     {
-    Console.Write($"{new Random().Next(101)} ");
+    array[i] = new Random().Next(101);
     i++;
     }
+    return array;
 }
 
-FulfillArray(arr);
+
 

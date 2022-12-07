@@ -3,21 +3,21 @@
 // 2, 4 -> 16
 
 Console.Clear();
+int GetNumDegree1 (int baza, int degree)
+{   
+    int i = 1;
+    int result = baza;
+    while(i<degree)
+    {
+        result = result*baza;
+        i++;
+    }
+    return result;
+}
 Console.Write("Введите число ");
 int A = int.Parse(Console.ReadLine());
 Console.Write("Введите число ");
 int B = int.Parse(Console.ReadLine());
 
-Console.WriteLine($"{GetNumDegree (A)}");
+Console.WriteLine($"{GetNumDegree1 (A,B)}");
 
-int GetNumDegree (int result)
-{   
-    int i = 1;
-    result = A;
-    while(i<B)
-    {
-        result = result*A;
-        i++;
-    }
-    return result;
-}

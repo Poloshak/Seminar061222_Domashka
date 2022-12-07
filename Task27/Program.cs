@@ -4,18 +4,20 @@
 // 9012 -> 12
 
 Console.Clear();
+int GetDigitSum (int number)
+{
+    int sum = 0;
+    while(number>0)
+    {
+        sum = sum + number%10;
+        number = number/10;
+    }
+    return sum;
+}
+
 Console.Write("Введите число ");
 int num = int.Parse(Console.ReadLine());
 
 Console.WriteLine($"{GetDigitSum(num)}");
 
-int GetDigitSum (int sum)
-{
-    sum = 0;
-    while(num>0)
-    {
-        sum = sum + num%10;
-        num = num/10;
-    }
-    return sum;
-}
+
