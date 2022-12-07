@@ -3,7 +3,7 @@
 // 2, 4 -> 16
 
 Console.Clear();
-int GetNumDegree1 (int baza, int degree)
+int GetNumDegree (int baza, int degree)
 {   
     int i = 1;
     int result = baza;
@@ -19,5 +19,5 @@ int A = int.Parse(Console.ReadLine());
 Console.Write("Введите число ");
 int B = int.Parse(Console.ReadLine());
 
-Console.WriteLine($"{GetNumDegree1 (A,B)}");
+Console.WriteLine($"{GetNumDegree (A,B)}");
 
